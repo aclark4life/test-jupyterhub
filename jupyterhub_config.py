@@ -7,7 +7,8 @@ from jupyterhub.auth import DummyAuthenticator
 c.JupyterHub.authenticator_class = DummyAuthenticator
 
 # Allow named users to access JupyterHub
-c.Authenticator.allowed_users = {'user1', 'user2'}
+# c.Authenticator.allowed_users = {'user1', 'user2'}
+c.Authenticator.allowed_users = {'admin', }
 
 # Use the DockerSpawner to spawn user notebooks in containers
 from dockerspawner import DockerSpawner
