@@ -3,7 +3,7 @@ FROM jupyterhub/jupyterhub:latest
 
 # Install any additional dependencies or packages here
 # For example, if you need specific libraries for your notebooks
-RUN pip install numpy pandas matplotlib
+RUN pip install numpy pandas matplotlib dockerspawner
 
 # Copy your JupyterHub configuration file into the container
 COPY jupyterhub_config.py /srv/jupyterhub/jupyterhub_config.py
