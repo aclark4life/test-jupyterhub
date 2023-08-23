@@ -1,4 +1,5 @@
 c.JupyterHub.ip = '0.0.0.0'
+
 c.JupyterHub.port = 8000
 
 # Use DummyAuthenticator for testing purposes
@@ -21,4 +22,5 @@ c.DockerSpawner.mem_limit = '1G'
 c.DockerSpawner.cpu_limit = 1.0
 
 # Use the default HubAuth and LocalProcessSpawner for single-user servers
-c.JupyterHub.hub_connect_ip = 'jupyterhub'
+# c.JupyterHub.hub_connect_ip = 'jupyterhub'
+c.JupyterHub.hub_connect_ip = '0.0.0.0'  # You can use the IP address
