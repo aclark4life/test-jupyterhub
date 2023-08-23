@@ -45,7 +45,7 @@ include base.mk
 .DEFAULT_GOAL := git-commit-push
 #
 # Uncomment the next line to include additional makefiles
-#include project.mk
+include jupyterhub.mk
 
 # Uncomment and edit the next 12 lines to customize the eb-create goal
 # eb-create:
