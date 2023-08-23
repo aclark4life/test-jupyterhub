@@ -42,7 +42,7 @@ include base.mk
 #PROJECT_NAME := project
 #
 # Uncomment the next line to customize the default goal
-#.DEFAULT_GOAL := git-commit-push
+.DEFAULT_GOAL := git-commit-push
 #
 # Uncomment the next line to include additional makefiles
 #include project.mk
